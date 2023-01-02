@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Lyrics to 99 Bottles of Beer</title>
+        <meta charset="utf-8">
+        <link rel = "icon" href = "Images/beer.png">
+        <style>
+            h1 {
+                color: green;
+                display: inline;
+            }
+            p {
+                font-family: sans-serif;
+                line-height: 1.5;
+                font-weight: bold;
+            }
+            img {
+                position: relative;
+                top: 12px;
+                left: 12px;
+
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "top">
+            <h1>Lyrics of the song 99 Bottles of Beer:</h1>
+            <img src = "Images/beer.png">
+        </div>
+        <script>
+            var bottles = 99;
+            while (bottles >= 0) {
+                var line = bottles + " bottles of beer on the wall, " + bottles + " bottles of beer.\n" +
+                "Take one down and pass it around, " + (bottles - 1) + " bottles of beer on the wall.\n";
+                if (bottles == 2) {
+                    line = bottles + " bottles of beer on the wall, " + bottles + " bottles of beer.\n" +
+                    "Take one down and pass it around, " + (bottles - 1) + " bottle of beer on the wall.\n";
+                }
+                if (bottles == 1) {
+                    line = bottles + " bottle of beer on the wall, " + bottles + " bottle of beer.\n" +
+                    "Take one down and pass it around, " + "no more bottles of beer on the wall.\n";
+                }
+                if (bottles == 0) {
+                    line = "No more bottles of beer on the wall, no more bottles of beer.\n" +
+                    "Go to the store and buy some more, " + "99 bottles of beer on the wall.\n";
+                }
+                const paragraph = document.createElement('p');
+                paragraph.innerHTML = line;
+                document.body.appendChild(paragraph);
+                bottles--;
+            }
+
+        </script>
+    </body>
+</html>
