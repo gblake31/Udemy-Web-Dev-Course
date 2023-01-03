@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(235, 227, 207);
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 8vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 20vw;
+}
