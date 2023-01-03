@@ -15,5 +15,5 @@ div {
 }
 
 img {
-    width: 20vw;
+    width: clamp(100px, 20vw, 250px);
 }
