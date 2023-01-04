@@ -3,45 +3,135 @@
     <head>
         <meta charset="UTF-8">
         <title>WebDev Sandbox</title>
+        <style>
+            body{
+                background-color: rgb(244, 244, 244);
+            }
+            h1 {
+                color: blueviolet;
+                font-family: 'Anybody', cursive;
+                font-size: 3rem;
+
+                background-color: rgb(231, 234, 252);
+
+                padding: 10px 30px;
+                border-style: solid;
+                border-width: 6px;
+                border-color: black;
+                margin-top: 5px;
+
+                width: 60%;
+            }
+
+            h2 {
+                width: 200px;
+                margin-left: 20px;
+                font-family: 'Anybody', cursive;
+            }
+
+            h3 {
+                font-family: 'Anybody', cursive;
+            }
+
+            a {
+                display: block;
+                margin: 10px;
+                font-family: 'Oxygen', sans-serif;
+            }
+
+            p {
+                font-size: 18px;
+                font-family: 'Oxygen', sans-serif;
+            }
+
+            #outer {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+
+            .chapter {
+                display: flex;
+
+                border-style: solid;
+                border-width: 6px;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                background-color: rgb(231, 234, 252);
+                
+                width: 64%;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+            #HTML {
+                color: orangered;
+            }
+
+            #CSS {
+                color: rgb(87, 129, 207);
+                font-size: 110%;
+            }
+
+            #JS {
+                color: rgb(195, 163, 4);
+            }
+
+            img {
+                width: 28px;
+                position: relative;
+                top: 5px;
+            }
+
+        </style>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <h1>Udemy Web Development Course</h1>
-        <h3>Below are programs from each module:</h3>
-        <table border = "2">
-            <tr>
-                <td><h4>Modules 2-3: HTML</h4></td>
-                <td>
-                    <ul>
-                        <li><a href = "hello.html">Hello World</a></li>
-                        <li><a href = "blake.html">About me Page</a></li>
-                        <li><a href = "tablesAndForms.html">Tables and Forms</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><h4>Modules 4-5: CSS</h4></td>
-                <td>
-                    <ul>
-                        <li><a href = "microsoft.html">Microsoft Logo (inline CSS)</a></li>
-                        <li><a href = "resume.html">My Resume (internal CSS)</a></li>
-                        <li><a href = "./Box Activity/boxActivity.html">Box Model Activity (external CSS)</a></li>
-                        <li><a href = "./QR Code Activity/qrCodeActivity.html">QR Code</a></li>
-                        <li><a href = "./Product Preview Activity/product.html">Perfume Ad</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><h4>Modules 9-11: Javascript</h4></td>
-                <td>
-                    <ul>
-                        <li><a href = "beer.html">99 Bottles of Beer (if statements / loops)</a></li>
-                        <li><a href = "./Dice Game/dice.html">Dice Game (DOM - selecting/manipulating elements)</a></li>
-                    </ul>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <hr>
+        <div id = "outer">
+            <div class = "chapter">
+                <h2>Modules 2-3: <br><span id = "HTML">HTML</span></h2>
+                <div class = "list">
+                    <a href = "hello.html">Hello World</a>
+                    <a href = "blake.html">About me Page</a>
+                    <a href = "tablesAndForms.html">Tables and Forms</a>
+                </div>
+            </div>
+            <div class = "chapter">
+                <h2>Modules 4-5: <br><span id = "CSS">CSS</span></h2>
+                <div class = "list">
+                    <a href = "microsoft.html">Microsoft Logo (inline CSS)</a>
+                    <a href = "resume.html">My Resume (internal CSS)</a>
+                    <a href = "./Box Activity/boxActivity.html">Box Model Activity (external CSS)</a>
+                    <a href = "./QR Code Activity/qrCodeActivity.html">QR Code</a>
+                    <a href = "./Product Preview Activity/product.html">Perfume Ad</a>
+                </div>
+            </div>
+            <div class = "chapter">
+                <h2>Modules 9-12: <br><span id = "JS">Javascript</span></h2>
+                <div class = "list">
+                    <a href = "beer.html">99 Bottles of Beer (if statements / loops)</a>
+                    <a href = "./Dice Game/dice.html">Dice Game (DOM - selecting/manipulating elements)</a>
+                    <a href = "./Yahtzee/yahtzee.html">Yahtzee (work in progress)</a>
+                </div>
+            </div>
+        </div> 
     </body>
+    <footer>
+        <p>Website and its contents created by Blake Gassman.</p>
+        <p class = "inline">View the code here:</p>
+        <a class = "inline" href = "https://github.com/gblake31/Udemy-Web-Dev-Course">Link to Github Repository</a>
+        <img src = "./Images/github.png">
+    </footer>
 
 </html>

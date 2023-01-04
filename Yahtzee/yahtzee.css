@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(235, 227, 207);
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+    font-size: 8vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 10px;
+}
+
+img {
+    width: clamp(50px, 15vw, 175px);
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    background-color: darkcyan;
+    font-size: 2em;
+    border-radius: 15px;
+    display: inline;
+    margin-right: 100px;
+}
+
+p {
+    display: inline;
+    font-size: 2rem;
+
+}
+
+.dice {
+    padding: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(235, 227, 207);
+}
+
+.locked {
+    
+    border-radius: 20px;
+    border-color: black;
+}
