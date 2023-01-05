@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dice Game!</title>
+        <title>Yahtzee!</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href = "yahtzee.css">
 
@@ -13,14 +13,25 @@
     <body>
         <h1><em>Yahtzee</em></h1>
         <div>
-            <img class = "dice" src = "dice1.png">
-            <img class = "dice" src = "dice1.png">
-            <img class = "dice" src = "dice1.png">
-            <img class = "dice" src = "dice1.png">
-            <img class = "dice" src = "dice1.png">
+            <img class = "dice">
+            <img class = "dice">
+            <img class = "dice">
+            <img class = "dice">
+            <img class = "dice">
         </div>
-        <button onclick="rollTheDice();">Roll</button>
+        <button onclick="rollTheDice();">
+            <img class = "logo" src = "dicelogo.png">
+        </button>
         <p># of Rolls: 0</p>
+        <p id = "score">Score = 0</p>
+        <div id = "table">
+            <p id = "3k">3 of a Kind</p>
+            <p id = "4k">4 of a Kind</p>
+            <p id = "5k">5 of a Kind</p>
+            <p id = "fh">Full House</p>
+            <p id = "ls">Large Straight</p>
+            <p id = "n">Nothing</p>
+        </div>
     </body>
     <footer>
         <script src = "yahtzee.js" charset="utf-8"></script>
