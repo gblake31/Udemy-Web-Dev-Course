@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Signika Negative', sans-serif;
+    color: whitesmoke;
+    text-shadow: black 1px 3px;
+}
+
+body {
+    background-image: url("table.jpg");
+}
+
+img {
+    width: 100px;
+}
