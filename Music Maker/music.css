@@ -1,0 +1,49 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3vw;
+}
+
+body {
+    background-color: rgb(97, 148, 148);
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: solid;
+
+    font-size: 3rem;
+    font-weight: 600;
+    color:rgb(45, 164, 180);
+    text-shadow: black 3px 3px;
+
+}
+
+#outer {
+    display: flex;
+}
+
+#drums, #mallets {
+    width: 50%;
+    height: 500px;
+    position: flex;
+}
+
+#W {
+    background-image: url("Images/crash.png");
+}
+
+#A {
+    background-image: url("Images/tom3.png");
+}
+
+#S {
+    background-image: url("Images/kick.png");
+}
+
+#D {
+    background-image: url("Images/snare.png");
+}
